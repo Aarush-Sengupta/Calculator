@@ -1,0 +1,64 @@
+/* set the font family and size for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* style the calculator container */
+.container {
+    width: 300px;
+    margin: 0 auto; /* center the container horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* style the calculator header */
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+/* style the input fields and label elements */
+label, input[type="number"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* style the operator dropdown menu */
+select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* style the calculate button */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+/* style the result input field */
+#result {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+}

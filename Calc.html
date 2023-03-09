@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Calculator</title>
+	<script>
+		function calculate() {
+			var num1 = parseFloat(document.getElementById("num1").value);
+			var num2 = parseFloat(document.getElementById("num2").value);
+			var operator = document.getElementById("operator").value;
+			var result;
+
+			if (operator == "+") {
+				result = num1 + num2;
+			} else if (operator == "-") {
+				result = num1 - num2;
+			} else if (operator == "*") {
+				result = num1 * num2;
+			} else if (operator == "/") {
+				result = num1 / num2;
+			}
+
+			document.getElementById("result").value = result;
+		}
+	</script>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+	
+    <div class="container">
+    <h1>Calculator</h1>
+    <label for="num1">Number 1:</label>
+    <input type="number" id="num1">
+    <label for="num2">Number 2:</label>
+    <input type="number" id="num2">
+    <label for="operator">Operator:</label>
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">x</option>
+        <option value="/">/</option>
+        <option value="^">power</option>
+        <option value="sqrt">square root</option>
+    </select>
+    <button onclick="calculate()">Calculate</button>
+    <input type="text" id="result" placeholder="Result" readonly>
+    <button onclick="reset()">Reset</button>
+    
+    <script src="Life.js"></script>
+</div>
+</body>
+</html>
